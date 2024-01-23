@@ -6,18 +6,60 @@
 }
 
 /* Base */
+*{box-sizing: border-box;
+}
 body {
     color: var(--color-primary-dark);
-    font-family: 'poppins',sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 18px;
+    font-weight: 400;
+    line-height: 1,5;
+    margin: 0;
 }  
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+    margin-top: 0;
+
+}
+
+address {
+    list-style-type: none;
+}
 ul {
     list-style-type: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.section {
+    padding: 48px;
+    }
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
 /* Button */
 .button {
+    padding: 16px 32px;
     color: var(--color-primary-light);
+    font-weight: 600;
     background-color: var(--color-brand-light);
     border: 2px solid var(--color-brand-light);
     border-radius: 8px;
@@ -37,12 +79,15 @@ ul {
     color: var(--color-brand-light);
 }
 /* Hero */
+.hero-section {
+    padding: 272px 0;
+}
 .hero-title {
+    margin-bottom: 0;
     color: var(--color-primary-light);
     text-align: center;
     font-size: 128px;
-    
-}
+   }
 
 .hero-title .accent {
     color: var(--color-brand-light);
@@ -57,6 +102,14 @@ ul {
     color: var(--color-brand-dark);
 }
 /* Traditions */
+.traditions-section {
+    padding-top: 96px;
+}
+
+.traditions-title {
+    margin-bottom: 42px;
+}
+
 .traditions-text .brand {
     color: var(--color-brand-light);
     
@@ -65,4 +118,40 @@ ul {
 .traditions-text .uppercase {
     text-transform: uppercase;
 
+}
+/* Chefs */
+.chefs-title {
+    margin-bottom: 80px;
+}
+.chef-title {
+    margin-top: 16px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* Formats */
+.formats-title {
+    margin-bottom: 80px;
+}
+
+.formats-title {
+    margin-top: 16px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* contact */
+.contact-title {
+    margin-bottom: 80px;
+}
+
+.contact-title {
+    margin-top: 16px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.contact-section__map {
+    width: 600px;
+    height: 595px;
 }
