@@ -193,6 +193,7 @@ ul {
     margin:0 auto 80px;
 }
 .chefs-photo {
+    width: 240px;
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0px 0px var(--color-primary-light), -16px 16px 0px 2px var(--color-secondary-dark);
     
