@@ -1,6 +1,7 @@
 :root {
     --color-primary-dark: #31261a;
     --color-primary-light: #faf4ea;
+    --color-secondary-dark: #A18268;
     --color-brand-normal: #819b57;
     --color-brand-dark: #465929;
     --color-brand-light: #cfcfcf;
@@ -9,9 +10,12 @@
 
 /* Base */
 *{box-sizing: border-box;
+
 }
+
 body {
     color: var(--color-primary-dark);
+    background-color: var(--color-primary-light);
     font-family: 'poppins', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -170,7 +174,7 @@ ul {
 }
 
 .traditions-text .brand {
-    color: var(--color-brand-light);
+    color: var(--color-brand-normal);
     
 }
 
@@ -188,6 +192,11 @@ ul {
     max-width: 520px;
     margin:0 auto 80px;
 }
+.chefs-photo {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0px 0px var(--color-primary-light), -16px 16px 0px 2px var(--color-secondary-dark);
+    
+    }
 
 .chefs-title::before,
 .chefs-title::after {
